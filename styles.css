@@ -8,14 +8,15 @@
   --olive: #557549;
   --brown: #533f2d;
   --tan: #d7b98d;
-  --button: #fff1be;
+  --button: #fff7e8;
   --button-alt: #f5c7c8;
-  --button-hover: #e8f4d4;
-  --button-shadow: #d4b184;
+  --button-hover: #eef7dd;
+  --button-shadow: #d7b98d;
   --pink: #f5c7c8;
   --blue: #b9dce8;
   --line: #7a5e42;
   --shadow: #c8a77c;
+  --ui-font: Verdana, "Trebuchet MS", Arial, sans-serif;
 }
 
 * {
@@ -28,7 +29,11 @@ html {
 
 body {
   margin: 0;
-  background: var(--bg);
+  background:
+    linear-gradient(45deg, rgba(85, 117, 73, 0.08) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(85, 117, 73, 0.08) 25%, transparent 25%),
+    var(--bg);
+  background-size: 28px 28px;
   color: var(--brown);
   font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
   font-size: 16px;
@@ -71,7 +76,7 @@ a:hover {
 .blink {
   margin: 0 0 8px;
   color: var(--olive);
-  font-family: "Courier New", monospace;
+  font-family: var(--ui-font);
   font-weight: 700;
 }
 
@@ -98,7 +103,7 @@ h1 {
   padding-top: 11px;
   border-top: 1px solid rgba(83, 63, 45, 0.24);
   color: rgba(83, 63, 45, 0.72);
-  font-family: "Courier New", monospace;
+  font-family: var(--ui-font);
   font-size: 0.95rem;
   font-weight: 700;
 }
@@ -197,7 +202,7 @@ h1 {
 .search-panel label,
 .search-hint {
   color: var(--olive);
-  font-family: "Courier New", monospace;
+  font-family: var(--ui-font);
   font-weight: 700;
 }
 
@@ -273,7 +278,7 @@ h1 {
 .post h2 {
   margin-bottom: 8px;
   color: var(--olive);
-  font-family: "Courier New", monospace;
+  font-family: var(--ui-font);
   font-size: 1.05rem;
   letter-spacing: 0;
   text-transform: lowercase;
@@ -311,7 +316,7 @@ h1 {
   border-radius: 6px;
   background: var(--button);
   color: var(--brown);
-  font-family: "Courier New", monospace;
+  font-family: var(--ui-font);
   font-size: 1rem;
   font-weight: 800;
   line-height: 1.25;
@@ -362,7 +367,7 @@ h1 {
   top: 11px;
   left: 18px;
   color: var(--olive);
-  font-family: "Courier New", monospace;
+  font-family: var(--ui-font);
   font-size: 1.1rem;
 }
 
@@ -409,7 +414,7 @@ h1 {
 
 .post-header span {
   flex: 0 0 auto;
-  font-family: "Courier New", monospace;
+  font-family: var(--ui-font);
   font-size: 0.82rem;
   font-weight: 700;
 }
@@ -471,7 +476,7 @@ details p {
   margin-top: 14px;
   padding: 10px;
   background: var(--mint-soft);
-  font-family: "Courier New", monospace;
+  font-family: var(--ui-font);
   font-weight: 700;
 }
 
