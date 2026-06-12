@@ -1,18 +1,21 @@
 :root {
   --bg: #f7ecd5;
   --paper: #fffaf0;
+  --cream: #fff6df;
   --mint: #d7f2b8;
+  --mint-soft: #edf8dc;
   --sage: #9ec783;
   --olive: #557549;
   --brown: #533f2d;
   --tan: #d7b98d;
-  --button: #fff4d8;
+  --button: #fff1be;
   --button-alt: #f5c7c8;
-  --button-shadow: #cfa77c;
+  --button-hover: #e8f4d4;
+  --button-shadow: #d4b184;
   --pink: #f5c7c8;
   --blue: #b9dce8;
   --line: #7a5e42;
-  --shadow: #b89269;
+  --shadow: #c8a77c;
 }
 
 * {
@@ -25,11 +28,7 @@ html {
 
 body {
   margin: 0;
-  background:
-    linear-gradient(45deg, rgba(85, 117, 73, 0.08) 25%, transparent 25%),
-    linear-gradient(-45deg, rgba(85, 117, 73, 0.08) 25%, transparent 25%),
-    var(--bg);
-  background-size: 28px 28px;
+  background: var(--bg);
   color: var(--brown);
   font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
   font-size: 16px;
@@ -42,7 +41,7 @@ a {
 }
 
 a:hover {
-  background: var(--pink);
+  background: #ffe4e5;
   color: var(--brown);
 }
 
@@ -58,17 +57,15 @@ a:hover {
 .footer-box {
   border: 2px solid var(--line);
   background: var(--paper);
-  box-shadow: 5px 5px 0 var(--shadow);
+  border-radius: 6px;
+  box-shadow: 4px 4px 0 var(--shadow);
 }
 
 .top-box {
   min-height: 178px;
   padding: 26px 18px;
   text-align: center;
-  background:
-    radial-gradient(circle at 14% 25%, var(--pink) 0 8%, transparent 9%),
-    radial-gradient(circle at 86% 30%, var(--blue) 0 9%, transparent 10%),
-    linear-gradient(180deg, var(--mint), var(--paper));
+  background: var(--mint-soft);
 }
 
 .blink {
@@ -131,7 +128,8 @@ h1 {
   max-width: 100%;
   padding: 6px 12px;
   border: 1px solid var(--line);
-  background: linear-gradient(180deg, #fffaf0, var(--button));
+  border-radius: 4px;
+  background: var(--button);
   color: var(--brown);
   overflow-wrap: anywhere;
   text-decoration: none;
@@ -139,8 +137,13 @@ h1 {
 }
 
 .nav-box a[aria-current="page"] {
-  background: linear-gradient(180deg, #ffe7e8, var(--button-alt));
+  background: var(--button-alt);
   box-shadow: inset 2px 2px 0 rgba(83, 63, 45, 0.16);
+}
+
+.nav-box a:hover,
+.nav-box a:focus-visible {
+  background: var(--button-hover);
 }
 
 .search-toggle {
@@ -152,7 +155,8 @@ h1 {
   height: 34px;
   place-items: center;
   border: 1px solid var(--line);
-  background: linear-gradient(180deg, #fffaf0, var(--button));
+  border-radius: 4px;
+  background: var(--button);
   color: var(--brown);
   cursor: pointer;
   box-shadow: 2px 2px 0 var(--button-shadow);
@@ -208,7 +212,7 @@ h1 {
 .search-close {
   min-height: 34px;
   border: 1px solid var(--line);
-  background: linear-gradient(180deg, #fffaf0, var(--button));
+  background: var(--button);
   color: var(--brown);
   font: inherit;
   font-weight: 700;
@@ -251,13 +255,14 @@ h1 {
   position: sticky;
   top: 12px;
   padding: 10px;
-  background: #fff4df;
+  background: var(--cream);
 }
 
 .widget {
   border: 1px dashed var(--line);
+  border-radius: 4px;
   padding: 10px;
-  background: rgba(215, 242, 184, 0.35);
+  background: #f5fbe9;
 }
 
 .widget + .widget {
@@ -303,7 +308,8 @@ h1 {
   place-items: center;
   padding: 14px 16px;
   border: 2px solid var(--line);
-  background: linear-gradient(135deg, #fff4d8, #fffaf0 54%, #f8dcda);
+  border-radius: 6px;
+  background: var(--button);
   color: var(--brown);
   font-family: "Courier New", monospace;
   font-size: 1rem;
@@ -312,8 +318,8 @@ h1 {
   text-align: center;
   text-decoration: none;
   box-shadow:
-    3px 3px 0 var(--shadow),
-    inset 2px 2px 0 rgba(255, 255, 255, 0.58);
+    3px 3px 0 var(--button-shadow),
+    inset 0 0 0 2px rgba(255, 250, 240, 0.46);
 }
 
 .link-grid a::after {
@@ -329,11 +335,11 @@ h1 {
 
 .link-grid a:hover,
 .link-grid a:focus-visible {
-  background: linear-gradient(135deg, #f8dcda, #fffaf0 58%, #dff1cb);
+  background: var(--button-hover);
   transform: translate(1px, 1px);
   box-shadow:
-    2px 2px 0 var(--shadow),
-    inset 2px 2px 0 rgba(255, 255, 255, 0.58);
+    2px 2px 0 var(--button-shadow),
+    inset 0 0 0 2px rgba(255, 250, 240, 0.46);
 }
 
 .featured-link-grid {
@@ -347,7 +353,7 @@ h1 {
   min-height: 104px;
   padding: 22px 24px;
   font-size: clamp(1.08rem, 2.4vw, 1.35rem);
-  background: linear-gradient(135deg, #fff4d8, #fffaf0 55%, #f8dcda);
+  background: var(--button);
 }
 
 .featured-link-grid a::before {
@@ -372,10 +378,8 @@ h1 {
 .image-slot {
   min-height: 220px;
   border: 2px dashed var(--line);
-  background:
-    radial-gradient(circle at 18% 20%, rgba(245, 199, 200, 0.92) 0 18px, transparent 19px),
-    radial-gradient(circle at 82% 78%, rgba(185, 220, 232, 0.82) 0 24px, transparent 25px),
-    linear-gradient(135deg, rgba(215, 242, 184, 0.9), rgba(255, 250, 240, 0.95));
+  border-radius: 4px;
+  background: #f3f9df;
 }
 
 .content {
@@ -396,7 +400,7 @@ h1 {
   margin: -14px -14px 12px;
   padding: 7px 10px;
   border-bottom: 2px solid var(--line);
-  background: linear-gradient(90deg, var(--mint), #f9d6d6);
+  background: var(--mint-soft);
 }
 
 .post-header h2 {
@@ -450,7 +454,7 @@ details + details {
 summary {
   cursor: pointer;
   padding: 8px;
-  background: var(--mint);
+  background: var(--mint-soft);
   color: var(--brown);
   font-weight: 800;
 }
@@ -466,7 +470,7 @@ details p {
   gap: 12px;
   margin-top: 14px;
   padding: 10px;
-  background: var(--mint);
+  background: var(--mint-soft);
   font-family: "Courier New", monospace;
   font-weight: 700;
 }
