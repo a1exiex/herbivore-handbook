@@ -1,19 +1,19 @@
 :root {
-  --bg: #f7ecd5;
-  --paper: #fffaf0;
-  --cream: #fff6df;
-  --mint: #d7f2b8;
-  --mint-soft: #edf8dc;
-  --sage: #9ec783;
-  --olive: #557549;
+  --bg: #f8ead2;
+  --paper: #fff8ea;
+  --cream: #fff2df;
+  --mint: #e0efbd;
+  --mint-soft: #f4efd5;
+  --sage: #a5bf75;
+  --olive: #657a3f;
   --brown: #533f2d;
   --tan: #d7b98d;
-  --button: #fff7e8;
-  --button-alt: #f5c7c8;
-  --button-hover: #eef7dd;
-  --button-shadow: #d7b98d;
-  --pink: #f5c7c8;
-  --blue: #b9dce8;
+  --button: #fff4df;
+  --button-alt: #f2c9bd;
+  --button-hover: #f7e5c8;
+  --button-shadow: #cfaa79;
+  --pink: #f2c9bd;
+  --blue: #c9dfd2;
   --line: #7a5e42;
   --shadow: #c8a77c;
   --ui-font: Verdana, "Trebuchet MS", Arial, sans-serif;
@@ -30,8 +30,8 @@ html {
 body {
   margin: 0;
   background:
-    linear-gradient(45deg, rgba(85, 117, 73, 0.08) 25%, transparent 25%),
-    linear-gradient(-45deg, rgba(85, 117, 73, 0.08) 25%, transparent 25%),
+    linear-gradient(45deg, rgba(122, 94, 66, 0.06) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(122, 94, 66, 0.06) 25%, transparent 25%),
     var(--bg);
   background-size: 28px 28px;
   color: var(--brown);
@@ -46,7 +46,7 @@ a {
 }
 
 a:hover {
-  background: #ffe4e5;
+  background: #f7ded3;
   color: var(--brown);
 }
 
@@ -70,7 +70,7 @@ a:hover {
   min-height: 178px;
   padding: 26px 18px;
   text-align: center;
-  background: var(--mint-soft);
+  background: #f2edcf;
 }
 
 .blink {
@@ -113,7 +113,7 @@ h1 {
   display: block;
   margin: 14px 0;
   padding: 8px 50px;
-  background: var(--mint);
+  background: #dcebb4;
 }
 
 .nav-spacer {
@@ -267,7 +267,7 @@ h1 {
   border: 1px dashed var(--line);
   border-radius: 4px;
   padding: 10px;
-  background: #f5fbe9;
+  background: #fff6df;
 }
 
 .widget + .widget {
@@ -384,7 +384,7 @@ h1 {
   min-height: 220px;
   border: 2px dashed var(--line);
   border-radius: 4px;
-  background: #f3f9df;
+  background: #f7efd5;
 }
 
 .content {
