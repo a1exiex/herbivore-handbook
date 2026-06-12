@@ -30,25 +30,35 @@ Name.com
 
 ## Current Site Structure
 
-The top navigation has five main pages:
+The top navigation has six main pages. Visible navigation buttons are lowercase:
 
 ```text
-Veganism 101
-Intersectionality
-Blog
-Recipes
-Links
+about
+veganism 101
+intersectionality
+blog
+recipes
+links
 ```
 
 Top-level files:
 
 ```text
+about.html              About
 index.html              Veganism 101
 intersectionality.html  Intersectionality
 blog.html               Blog
 recipes.html            Recipes
 links.html              Links
 ```
+
+Every real page uses the same main hero heading:
+
+```text
+the herbivore handbook
+```
+
+The page or subpage name appears in a styled `page-title-card` directly below the nav bar.
 
 Old compatibility redirects:
 
@@ -123,7 +133,6 @@ Current mobile behavior:
 top nav becomes a two-column button grid
 search icon moves below the menu as a centered button
 page shell uses a fixed mobile max width to avoid horizontal clipping
-sidebar stacks above main content
 images become wide 16:9 panels
 ```
 

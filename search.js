@@ -1,81 +1,86 @@
 const pages = [
   {
-    title: "Veganism 101",
+    title: "about",
+    url: "about.html",
+    terms: "about intro site purpose herbivore handbook"
+  },
+  {
+    title: "veganism 101",
     url: "index.html",
     terms: "veganism 101 basics case ethics health affordability efficacy faq animals"
   },
   {
-    title: "The Case for Veganism",
+    title: "the case for veganism",
     url: "case-for-veganism.html",
     terms: "case for veganism animal suffering sentience exploitation argument"
   },
   {
-    title: "Ethics",
+    title: "ethics",
     url: "ethics.html",
     terms: "ethics animals sentience suffering speciesism moral worth exploitation"
   },
   {
-    title: "Health",
+    title: "health",
     url: "health.html",
     terms: "health nutrition b12 protein iron calcium vitamin diet vegan food"
   },
   {
-    title: "Affordability",
+    title: "affordability",
     url: "affordability.html",
     terms: "affordable cheap budget beans lentils rice tofu vegan"
   },
   {
-    title: "Efficacy",
+    title: "efficacy",
     url: "efficacy.html",
     terms: "efficacy impact individual choice movement difference boycott"
   },
   {
-    title: "FAQ",
+    title: "faq",
     url: "faq.html",
     terms: "faq questions anti vegan arguments expensive privilege capitalism"
   },
   {
-    title: "Intersectionality",
+    title: "intersectionality",
     url: "intersectionality.html",
     terms: "intersectionality justice leftism feminism coloniality labor class race"
   },
   {
-    title: "Leftism",
+    title: "leftism",
     url: "leftism.html",
     terms: "leftism anti capitalism class labor production animal liberation"
   },
   {
-    title: "Feminism",
+    title: "feminism",
     url: "feminism.html",
     terms: "feminism reproduction bodies objectification care animal agriculture"
   },
   {
-    title: "Coloniality",
+    title: "coloniality",
     url: "coloniality.html",
     terms: "coloniality colonialism land food systems culture"
   },
   {
-    title: "Blog",
+    title: "blog",
     url: "blog.html",
     terms: "blog personal commentary updates reflections posts"
   },
   {
-    title: "Recipes",
+    title: "recipes",
     url: "recipes.html",
     terms: "recipes food meals pantry staples tofu beans lentils"
   },
   {
-    title: "Links",
+    title: "links",
     url: "links.html",
     terms: "links sources reading library texts"
   },
   {
-    title: "Foundational Texts",
+    title: "foundational texts",
     url: "foundational-texts.html",
     terms: "foundational texts books singer regan joy adams animal liberation"
   },
   {
-    title: "Recommended Reads",
+    title: "recommended reads",
     url: "recommended-reads.html",
     terms: "recommended reads articles essays sources left praxis veganhealth"
   }
@@ -94,7 +99,7 @@ dialog.innerHTML = `
       <input id="site-search" name="q" type="search" list="search-pages" placeholder="try: ethics, recipes, leftism">
       <button type="submit">go</button>
     </div>
-    <p class="search-hint">matches: veganism 101, ethics, health, intersectionality, blog, recipes, links</p>
+    <p class="search-hint">matches: about, veganism 101, ethics, health, intersectionality, blog, recipes, links</p>
     <datalist id="search-pages"></datalist>
   </form>
 `;

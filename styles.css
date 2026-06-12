@@ -134,6 +134,37 @@ h1 {
   box-shadow: inset 2px 2px 0 rgba(83, 63, 45, 0.16);
 }
 
+.page-title-card {
+  position: relative;
+  margin: 14px auto 16px;
+  padding: 12px 16px;
+  border: 2px solid var(--line);
+  background:
+    radial-gradient(circle at 8% 20%, rgba(245, 199, 200, 0.85) 0 12px, transparent 13px),
+    radial-gradient(circle at 94% 74%, rgba(185, 220, 232, 0.75) 0 15px, transparent 16px),
+    linear-gradient(180deg, #fffaf0, rgba(215, 242, 184, 0.7));
+  box-shadow: 4px 4px 0 var(--shadow);
+  text-align: center;
+}
+
+.page-title-card p {
+  margin: 0 0 2px;
+  color: var(--olive);
+  font-family: "Courier New", monospace;
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.page-title-card h2 {
+  margin: 0;
+  color: var(--brown);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.55rem, 4vw, 2.35rem);
+  line-height: 1.05;
+  text-shadow: 1px 1px 0 var(--pink);
+  text-transform: lowercase;
+}
+
 .search-toggle {
   position: absolute;
   top: 8px;
@@ -328,6 +359,33 @@ h1 {
     inset 2px 2px 0 rgba(255, 255, 255, 0.58);
 }
 
+.featured-link-grid {
+  grid-template-columns: 1fr;
+  gap: 16px;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.featured-link-grid a {
+  min-height: 104px;
+  padding: 22px 24px;
+  font-size: clamp(1.08rem, 2.4vw, 1.35rem);
+  background:
+    radial-gradient(circle at 12% 22%, rgba(245, 199, 200, 0.9) 0 18px, transparent 19px),
+    radial-gradient(circle at 90% 78%, rgba(185, 220, 232, 0.82) 0 24px, transparent 25px),
+    linear-gradient(135deg, rgba(215, 242, 184, 0.96), rgba(255, 250, 240, 0.98) 62%, rgba(249, 214, 214, 0.72));
+}
+
+.featured-link-grid a::before {
+  content: "*";
+  position: absolute;
+  top: 11px;
+  left: 18px;
+  color: var(--olive);
+  font-family: "Courier New", monospace;
+  font-size: 1.1rem;
+}
+
 .photo-widget img {
   display: block;
   width: 100%;
@@ -443,6 +501,7 @@ details p {
 
   .top-box,
   .nav-box,
+  .page-title-card,
   .sidebar,
   .post,
   .footer-box,
@@ -549,6 +608,7 @@ details p {
 
   .top-box,
   .nav-box,
+  .page-title-card,
   .sidebar,
   .post,
   .footer-box {
@@ -580,6 +640,11 @@ details p {
     max-width: calc(50% - 6px);
     text-align: center;
     white-space: nowrap;
+  }
+
+  .page-title-card {
+    margin: 12px auto 14px;
+    padding: 10px 12px;
   }
 
   .search-toggle {
