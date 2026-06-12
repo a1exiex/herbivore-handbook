@@ -1,12 +1,12 @@
 const pages = [
   {
     title: "about",
-    url: "about.html",
+    url: "index.html",
     terms: "about intro site purpose herbivore handbook"
   },
   {
     title: "veganism 101",
-    url: "index.html",
+    url: "veganism-101.html",
     terms: "veganism 101 basics case ethics health affordability efficacy faq animals"
   },
   {

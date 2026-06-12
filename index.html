@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="veganism 101 hub for The Herbivore Handbook.">
-    <title>the herbivore handbook | veganism 101</title>
+    <meta name="description" content="About The Herbivore Handbook.">
+    <title>the herbivore handbook | about</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
     <script src="search.js" defer></script>
@@ -12,16 +12,16 @@
   <body>
     <div class="page-shell">
       <header class="top-box" id="top">
-        <p class="blink">* start here *</p>
-        <h1>the herbivore handbook</h1>
-        <p class="subtitle">a cozy guide to the ethics, practicality, and politics of veganism</p>
+        <p class="blink">* welcome *</p>
+        <h1>about</h1>
+        <p class="subtitle">the herbivore handbook</p>
       </header>
 
       <nav class="nav-box" aria-label="Site navigation">
         <span class="nav-spacer" aria-hidden="true"></span>
         <span class="nav-links">
-          <a href="about.html">about</a>
-          <a aria-current="page" href="index.html">veganism 101</a>
+          <a aria-current="page" href="index.html">about</a>
+          <a href="veganism-101.html">veganism 101</a>
           <a href="intersectionality.html">intersectionality</a>
           <a href="blog.html">blog</a>
           <a href="recipes.html">recipes</a>
@@ -30,40 +30,37 @@
         <button class="search-toggle" type="button" aria-label="Search this site" data-search-open><svg aria-hidden="true" viewBox="0 0 24 24" focusable="false"><circle cx="10.5" cy="10.5" r="6.25"></circle><path d="M15.2 15.2 20 20"></path></svg></button>
       </nav>
 
-      <section class="page-title-card" aria-label="current page">
-        <p>currently reading</p>
-        <h2>veganism 101</h2>
-      </section>
-
-      <div class="layout">
-
+      <div class="layout has-sidebar about-layout">
         <main class="content">
           <article class="post">
             <div class="post-header">
-              <h2>overview</h2>
-              <span>hub</span>
+              <h2>about this site</h2>
+              <span>intro</span>
             </div>
             <p>
-              This section is the beginner-friendly path through the site. It breaks veganism into the questions people usually need answered first: why it matters, whether it is healthy, whether it is affordable, whether individual choices matter, and how to respond to common objections.
+              The Herbivore Handbook is a cozy vegan resource site for ethics, politics, practical questions, recipes, links, and personal commentary.
+            </p>
+            <p>
+              It is meant to be easy to browse: start with veganism 101, read the case for veganism and FAQ, then use the other sections for deeper political context, recipes, and further reading.
             </p>
           </article>
-
-          <article class="post">
-            <div class="post-header">
-              <h2>read next</h2>
-              <span>subpages</span>
-            </div>
-            <div class="link-grid featured-link-grid">
-              <a href="case-for-veganism.html">the case for veganism</a>
-              <a href="faq.html">faq</a>
-            </div>
-          </article>
         </main>
+        <aside class="sidebar about-sidebar" aria-label="about page side column">
+          <div class="widget photo-widget">
+            <div class="image-slot" role="img" aria-label="open image slot"></div>
+          </div>
+          <div class="widget">
+            <h2>start here</h2>
+            <p>
+              This site is organized like a small personal resource library: start with the core argument, then move into politics, recipes, and outside reading.
+            </p>
+          </div>
+        </aside>
       </div>
 
       <footer class="footer-box">
-        <span>next: intersectionality</span>
-        <a href="intersectionality.html">go there</a>
+        <span>start reading</span>
+        <a href="veganism-101.html">veganism 101</a>
       </footer>
     </div>
   </body>

@@ -44,21 +44,21 @@ links
 Top-level files:
 
 ```text
-about.html              About
-index.html              Veganism 101
+index.html              About/homepage
+veganism-101.html       Veganism 101
 intersectionality.html  Intersectionality
 blog.html               Blog
 recipes.html            Recipes
 links.html              Links
 ```
 
-Every real page uses the same main hero heading:
+Every real page uses its page name as the main hero heading. Under that heading is a faint divider and the smaller site name:
 
 ```text
 the herbivore handbook
 ```
 
-The page or subpage name appears in a styled `page-title-card` directly below the nav bar.
+There is no separate page-title card below the nav.
 
 ## Subpages
 
