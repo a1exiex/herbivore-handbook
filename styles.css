@@ -1,16 +1,19 @@
 :root {
   --bg: #f8ead2;
-  --paper: #fff8ea;
+  --paper: #fffaf0;
   --cream: #fff2df;
-  --mint: #e0efbd;
-  --mint-soft: #f4efd5;
+  --mint: #dcebb4;
+  --mint-soft: #eef6d8;
+  --header: #e5efc9;
+  --card-head: #f3d4c6;
+  --widget-bg: #f1f7dd;
   --sage: #a5bf75;
   --olive: #657a3f;
   --brown: #533f2d;
   --tan: #d7b98d;
-  --button: #fff4df;
+  --button: #fffaf0;
   --button-alt: #f2c9bd;
-  --button-hover: #f7e5c8;
+  --button-hover: #f8e6d7;
   --button-shadow: #cfaa79;
   --pink: #f2c9bd;
   --blue: #c9dfd2;
@@ -70,7 +73,7 @@ a:hover {
   min-height: 178px;
   padding: 26px 18px;
   text-align: center;
-  background: #f2edcf;
+  background: var(--header);
 }
 
 .blink {
@@ -113,7 +116,7 @@ h1 {
   display: block;
   margin: 14px 0;
   padding: 8px 50px;
-  background: #dcebb4;
+  background: var(--mint);
 }
 
 .nav-spacer {
@@ -132,7 +135,7 @@ h1 {
   display: inline-block;
   max-width: 100%;
   padding: 6px 12px;
-  border: 1px solid var(--line);
+  border: 1px solid #9a6d4b;
   border-radius: 4px;
   background: var(--button);
   color: var(--brown);
@@ -159,7 +162,7 @@ h1 {
   width: 34px;
   height: 34px;
   place-items: center;
-  border: 1px solid var(--line);
+  border: 1px solid #9a6d4b;
   border-radius: 4px;
   background: var(--button);
   color: var(--brown);
@@ -216,7 +219,7 @@ h1 {
 .search-row button,
 .search-close {
   min-height: 34px;
-  border: 1px solid var(--line);
+  border: 1px solid #9a6d4b;
   background: var(--button);
   color: var(--brown);
   font: inherit;
@@ -267,7 +270,7 @@ h1 {
   border: 1px dashed var(--line);
   border-radius: 4px;
   padding: 10px;
-  background: #fff6df;
+  background: var(--widget-bg);
 }
 
 .widget + .widget {
@@ -312,7 +315,7 @@ h1 {
   min-height: 74px;
   place-items: center;
   padding: 14px 16px;
-  border: 2px solid var(--line);
+  border: 2px solid #9a6d4b;
   border-radius: 6px;
   background: var(--button);
   color: var(--brown);
@@ -384,7 +387,7 @@ h1 {
   min-height: 220px;
   border: 2px dashed var(--line);
   border-radius: 4px;
-  background: #f7efd5;
+  background: var(--widget-bg);
 }
 
 .content {
@@ -405,7 +408,7 @@ h1 {
   margin: -14px -14px 12px;
   padding: 7px 10px;
   border-bottom: 2px solid var(--line);
-  background: var(--mint-soft);
+  background: var(--card-head);
 }
 
 .post-header h2 {
@@ -459,7 +462,7 @@ details + details {
 summary {
   cursor: pointer;
   padding: 8px;
-  background: var(--mint-soft);
+  background: var(--card-head);
   color: var(--brown);
   font-weight: 800;
 }
@@ -475,7 +478,7 @@ details p {
   gap: 12px;
   margin-top: 14px;
   padding: 10px;
-  background: var(--mint-soft);
+  background: var(--mint);
   font-family: var(--ui-font);
   font-weight: 700;
 }
