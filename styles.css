@@ -6,8 +6,9 @@
   --olive: #557549;
   --brown: #533f2d;
   --tan: #d7b98d;
-  --button: #fff2c7;
-  --button-alt: #f7d6d2;
+  --button: #fff4d8;
+  --button-alt: #f5c7c8;
+  --button-shadow: #cfa77c;
   --pink: #f5c7c8;
   --blue: #b9dce8;
   --line: #7a5e42;
@@ -128,16 +129,17 @@ h1 {
 .nav-box a {
   display: inline-block;
   max-width: 100%;
-  padding: 5px 9px;
+  padding: 6px 12px;
   border: 1px solid var(--line);
-  background: var(--button);
+  background: linear-gradient(180deg, #fffaf0, var(--button));
   color: var(--brown);
   overflow-wrap: anywhere;
   text-decoration: none;
+  box-shadow: 2px 2px 0 var(--button-shadow);
 }
 
 .nav-box a[aria-current="page"] {
-  background: var(--button-alt);
+  background: linear-gradient(180deg, #ffe7e8, var(--button-alt));
   box-shadow: inset 2px 2px 0 rgba(83, 63, 45, 0.16);
 }
 
@@ -150,9 +152,10 @@ h1 {
   height: 34px;
   place-items: center;
   border: 1px solid var(--line);
-  background: var(--button);
+  background: linear-gradient(180deg, #fffaf0, var(--button));
   color: var(--brown);
   cursor: pointer;
+  box-shadow: 2px 2px 0 var(--button-shadow);
 }
 
 .search-toggle:hover,
@@ -205,7 +208,7 @@ h1 {
 .search-close {
   min-height: 34px;
   border: 1px solid var(--line);
-  background: var(--button);
+  background: linear-gradient(180deg, #fffaf0, var(--button));
   color: var(--brown);
   font: inherit;
   font-weight: 700;
@@ -300,10 +303,7 @@ h1 {
   place-items: center;
   padding: 14px 16px;
   border: 2px solid var(--line);
-  background:
-    radial-gradient(circle at 14% 18%, rgba(185, 220, 232, 0.78) 0 13px, transparent 14px),
-    radial-gradient(circle at 90% 80%, rgba(245, 199, 200, 0.72) 0 16px, transparent 17px),
-    linear-gradient(180deg, rgba(255, 242, 199, 0.98), rgba(255, 250, 240, 0.96));
+  background: linear-gradient(135deg, #fff4d8, #fffaf0 54%, #f8dcda);
   color: var(--brown);
   font-family: "Courier New", monospace;
   font-size: 1rem;
@@ -317,23 +317,19 @@ h1 {
 }
 
 .link-grid a::after {
-  content: "";
+  content: ">";
   position: absolute;
   right: 10px;
-  bottom: 8px;
-  width: 18px;
-  height: 8px;
-  border-right: 2px solid var(--olive);
-  border-bottom: 2px solid var(--olive);
-  opacity: 0.58;
+  bottom: 7px;
+  color: rgba(85, 117, 73, 0.72);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1rem;
+  font-weight: 800;
 }
 
 .link-grid a:hover,
 .link-grid a:focus-visible {
-  background:
-    radial-gradient(circle at 14% 18%, rgba(255, 242, 199, 0.95) 0 13px, transparent 14px),
-    radial-gradient(circle at 90% 80%, rgba(185, 220, 232, 0.82) 0 16px, transparent 17px),
-    linear-gradient(180deg, rgba(245, 199, 200, 0.92), rgba(255, 250, 240, 0.98));
+  background: linear-gradient(135deg, #f8dcda, #fffaf0 58%, #dff1cb);
   transform: translate(1px, 1px);
   box-shadow:
     2px 2px 0 var(--shadow),
@@ -351,10 +347,7 @@ h1 {
   min-height: 104px;
   padding: 22px 24px;
   font-size: clamp(1.08rem, 2.4vw, 1.35rem);
-  background:
-    radial-gradient(circle at 12% 22%, rgba(185, 220, 232, 0.9) 0 18px, transparent 19px),
-    radial-gradient(circle at 90% 78%, rgba(185, 220, 232, 0.82) 0 24px, transparent 25px),
-    linear-gradient(135deg, rgba(255, 242, 199, 0.98), rgba(255, 250, 240, 0.98) 62%, rgba(249, 214, 214, 0.76));
+  background: linear-gradient(135deg, #fff4d8, #fffaf0 55%, #f8dcda);
 }
 
 .featured-link-grid a::before {
