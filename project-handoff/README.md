@@ -60,14 +60,6 @@ the herbivore handbook
 
 The page or subpage name appears in a styled `page-title-card` directly below the nav bar.
 
-Old compatibility redirects:
-
-```text
-veganism-101.html       redirects to index.html
-answering-arguments.html redirects to faq.html
-sources.html            redirects to links.html
-```
-
 ## Subpages
 
 Veganism 101:
@@ -115,12 +107,6 @@ soft pink/blue header circles
 Georgia display type
 Courier labels
 Trebuchet body text
-```
-
-Primary image:
-
-```text
-assets/aesthetic-nature.png
 ```
 
 ## Mobile Rules
