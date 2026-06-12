@@ -50,7 +50,6 @@ a:hover {
 
 .top-box,
 .nav-box,
-.sidebar,
 .post,
 .footer-box {
   border: 2px solid var(--line);
@@ -229,8 +228,8 @@ h1 {
 
 .layout {
   display: grid;
-  grid-template-columns: 245px minmax(0, 1fr);
-  gap: 14px;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
   align-items: start;
 }
 
@@ -278,25 +277,55 @@ h1 {
 
 .link-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 8px;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 12px;
 }
 
 .link-grid a {
-  display: block;
-  padding: 10px;
-  border: 1px solid var(--line);
+  position: relative;
+  display: grid;
+  min-height: 74px;
+  place-items: center;
+  padding: 14px 16px;
+  border: 2px solid var(--line);
   background:
-    linear-gradient(180deg, rgba(215, 242, 184, 0.72), rgba(255, 250, 240, 0.92));
+    radial-gradient(circle at 14% 18%, rgba(245, 199, 200, 0.82) 0 13px, transparent 14px),
+    radial-gradient(circle at 90% 80%, rgba(185, 220, 232, 0.72) 0 16px, transparent 17px),
+    linear-gradient(180deg, rgba(215, 242, 184, 0.92), rgba(255, 250, 240, 0.96));
   color: var(--brown);
   font-family: "Courier New", monospace;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.25;
   text-align: center;
   text-decoration: none;
-  box-shadow: inset 2px 2px 0 rgba(255, 255, 255, 0.45);
+  box-shadow:
+    3px 3px 0 var(--shadow),
+    inset 2px 2px 0 rgba(255, 255, 255, 0.58);
 }
 
-.link-grid a:hover {
-  background: var(--pink);
+.link-grid a::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  bottom: 8px;
+  width: 18px;
+  height: 8px;
+  border-right: 2px solid var(--olive);
+  border-bottom: 2px solid var(--olive);
+  opacity: 0.58;
+}
+
+.link-grid a:hover,
+.link-grid a:focus-visible {
+  background:
+    radial-gradient(circle at 14% 18%, rgba(215, 242, 184, 0.9) 0 13px, transparent 14px),
+    radial-gradient(circle at 90% 80%, rgba(185, 220, 232, 0.82) 0 16px, transparent 17px),
+    linear-gradient(180deg, rgba(245, 199, 200, 0.92), rgba(255, 250, 240, 0.98));
+  transform: translate(1px, 1px);
+  box-shadow:
+    2px 2px 0 var(--shadow),
+    inset 2px 2px 0 rgba(255, 255, 255, 0.58);
 }
 
 .photo-widget img {
