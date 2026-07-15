@@ -1,24 +1,24 @@
 :root {
-  --bg: #f8ead2;
-  --paper: #fffaf0;
-  --cream: #fff2df;
-  --mint: #dcebb4;
-  --mint-soft: #eef6d8;
-  --header: #e5efc9;
-  --card-head: #f3d4c6;
-  --widget-bg: #f1f7dd;
-  --sage: #a5bf75;
-  --olive: #657a3f;
-  --brown: #533f2d;
-  --tan: #d7b98d;
-  --button: #fffaf0;
-  --button-alt: #f2c9bd;
-  --button-hover: #f8e6d7;
-  --button-shadow: #cfaa79;
-  --pink: #f2c9bd;
-  --blue: #c9dfd2;
-  --line: #7a5e42;
-  --shadow: #c8a77c;
+  --bg: #f7e8d2;
+  --paper: #fffaf1;
+  --cream: #fff0df;
+  --mint: #d9e5bd;
+  --mint-soft: #edf3dc;
+  --header: #dce7c5;
+  --card-head: #f3cfc0;
+  --widget-bg: #eaf1d8;
+  --sage: #9eaf78;
+  --olive: #6c774e;
+  --brown: #513f35;
+  --tan: #d8b991;
+  --button: #fff9ef;
+  --button-alt: #efc6ba;
+  --button-hover: #f8ddd3;
+  --button-shadow: #d2ad8c;
+  --pink: #e9b8ae;
+  --blue: #cfe3dc;
+  --line: #806650;
+  --shadow: #cdaa82;
   --ui-font: Verdana, "Trebuchet MS", Arial, sans-serif;
 }
 
@@ -44,12 +44,12 @@ body {
 }
 
 a {
-  color: #246f7e;
+  color: #716b57;
   font-weight: 700;
 }
 
 a:hover {
-  background: #f7ded3;
+  background: #f2e4df;
   color: var(--brown);
 }
 
@@ -65,8 +65,8 @@ a:hover {
 .footer-box {
   border: 2px solid var(--line);
   background: var(--paper);
-  border-radius: 6px;
-  box-shadow: 4px 4px 0 var(--shadow);
+  border-radius: 10px;
+  box-shadow: 3px 3px 0 var(--shadow);
 }
 
 .top-box {
@@ -117,6 +117,85 @@ h1 {
   margin: 14px 0;
   padding: 8px 50px;
   background: var(--mint);
+}
+
+.welcome-card {
+  margin-bottom: 16px;
+  padding: clamp(24px, 5vw, 48px);
+  border: 2px solid var(--line);
+  border-radius: 10px;
+  background: var(--paper);
+  box-shadow: 3px 3px 0 var(--shadow);
+  text-align: center;
+}
+
+.eyebrow {
+  margin-bottom: 10px;
+  color: var(--olive);
+  font-family: var(--ui-font);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.welcome-card h2 {
+  max-width: 720px;
+  margin: 0 auto 14px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.8rem, 5vw, 3.2rem);
+  line-height: 1.05;
+}
+
+.welcome-card > p:not(.eyebrow) {
+  max-width: 680px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.welcome-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 22px;
+}
+
+.welcome-actions a {
+  padding: 9px 14px;
+  border: 1px solid #9a6d4b;
+  border-radius: 4px;
+  background: var(--cream);
+  color: var(--brown);
+  text-decoration: none;
+  box-shadow: 2px 2px 0 var(--button-shadow);
+}
+
+.welcome-actions .primary-link {
+  background: var(--pink);
+}
+
+.home-lower {
+  margin-top: 0;
+}
+
+.mini-note {
+  display: grid;
+  min-height: 160px;
+  place-content: center;
+  padding: 18px;
+  text-align: center;
+}
+
+.mini-note span {
+  color: var(--olive);
+  font-size: 2.2rem;
+}
+
+.mini-note p {
+  margin-bottom: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
 }
 
 .nav-spacer {
@@ -280,7 +359,7 @@ h1 {
 .widget h2,
 .post h2 {
   margin-bottom: 8px;
-  color: var(--olive);
+  color: var(--brown);
   font-family: var(--ui-font);
   font-size: 1.05rem;
   letter-spacing: 0;
@@ -407,7 +486,7 @@ h1 {
   gap: 10px;
   margin: -14px -14px 12px;
   padding: 7px 10px;
-  border-bottom: 2px solid var(--line);
+  border-bottom: 1px solid rgba(137, 118, 106, 0.65);
   background: var(--card-head);
 }
 
@@ -647,4 +726,14 @@ details p {
     position: static;
     margin: 8px auto 0;
   }
+
+  .welcome-card {
+    padding: 24px 18px;
+  }
+
+  .welcome-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
 }

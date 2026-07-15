@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="About The Herbivore Handbook.">
-    <title>the herbivore handbook | about</title>
+    <title>the herbivore handbook | home</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
     <script src="search.js" defer></script>
@@ -12,15 +12,14 @@
   <body>
     <div class="page-shell">
       <header class="top-box" id="top">
-        <p class="blink">* welcome *</p>
-        <h1>about</h1>
+        <h1>home</h1>
         <p class="subtitle">the herbivore handbook</p>
       </header>
 
       <nav class="nav-box" aria-label="Site navigation">
         <span class="nav-spacer" aria-hidden="true"></span>
         <span class="nav-links">
-          <a aria-current="page" href="index.html">about</a>
+          <a aria-current="page" href="index.html">home</a>
           <a href="veganism-101.html">veganism 101</a>
           <a href="intersectionality.html">intersectionality</a>
           <a href="blog.html">blog</a>
@@ -30,7 +29,17 @@
         <button class="search-toggle" type="button" aria-label="Search this site" data-search-open><svg aria-hidden="true" viewBox="0 0 24 24" focusable="false"><circle cx="10.5" cy="10.5" r="6.25"></circle><path d="M15.2 15.2 20 20"></path></svg></button>
       </nav>
 
-      <div class="layout has-sidebar about-layout">
+      <section class="welcome-card" aria-labelledby="welcome-title">
+        <p class="eyebrow">a gentle guide to ethical veganism</p>
+        <h2 id="welcome-title">Everything important, in one friendly place.</h2>
+        <p>Clear introductions to the ethics, everyday practice, and wider politics of veganism—whether you are curious, newly vegan, or looking for something useful to share.</p>
+        <div class="welcome-actions">
+          <a class="primary-link" href="veganism-101.html">start with veganism 101 →</a>
+          <a href="faq.html">browse common questions</a>
+        </div>
+      </section>
+
+      <div class="layout has-sidebar about-layout home-lower">
         <main class="content">
           <article class="post">
             <div class="post-header">
@@ -38,26 +47,34 @@
               <span>intro</span>
             </div>
             <p>
-              The Herbivore Handbook is a cozy vegan resource site for ethics, politics, practical questions, recipes, links, and personal commentary.
+              The Herbivore Handbook is a simple, straightforward resource for anyone looking to learn the basics of veganism.
             </p>
             <p>
-              It is meant to be easy to browse: start with veganism 101, read the case for veganism and FAQ, then use the other sections for deeper political context, recipes, and further reading.
+              This site specifically concerns the principles and practices associated with <em> ethical veganism.</em>
             </p>
           </article>
         </main>
         <aside class="sidebar about-sidebar" aria-label="about page side column">
           <div class="widget photo-widget">
-            <div class="image-slot" role="img" aria-label="open image slot"></div>
+            <div class="mini-note" aria-label="site note">
+              <span aria-hidden="true">✿</span>
+              <p>Learning is allowed to be slow, curious, and imperfect.</p>
+            </div>
           </div>
           <div class="widget">
             <h2>start here</h2>
             <p>
-              This site is organized like a small personal resource library: start with the core argument, then move into politics, recipes, and outside reading.
+              Alex Wilner is the creator of this website—email alexwilner2027@gmail.com regarding any inquiries. 
             </p>
+            <p> Social media accounts include: </p>
+            <ul>
+              <li> @leftistalex (Tiktok)</li>
+              <li> @youngleftistsusa (Instagram)</li>
+            </ul>                   
           </div>
         </aside>
       </div>
-
+      
       <footer class="footer-box">
         <span>start reading</span>
         <a href="veganism-101.html">veganism 101</a>
